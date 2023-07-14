@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footboolist Grid</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+</head>
+<body>
+    <div class="sort-container">
+        <div class="column md-4">
+            <label for="nameFilter">Search by name:</label>
+            <input type="text" id="nameFilter" name="nameFilter">
+        </div>
+        <div class="column md-4">
+            <label for="priceFilter">price  (between 100bln and 15bln):</label>
+            <input type="range" id="priceFilter" name="priceFilter" min="15 000 000$" max="250 000 000$">
+        </div>
+        <div class="column md-4">
+            <div class="radio-choice">
+                <input type="radio" id="positionFilterForward" name="positionFilter" value="forward" />
+                <label for="positionFilterForward">Forward</label>
+            </div>
+            <div class="radio-choice">
+                <input type="radio" id="positionFilterMidfielder" name="positionFilter" value="midfielder" />
+                <label for="positionFilterMidfielder">Midfielder</label>
+            </div>
+           <div class="radio-choice">
+                <input type="radio" id="positionFilterDefender" name="positionFilter" value="defender" />
+                <label for="positionFilterDefender">Defender</label>
+           </div>
+           <div class="radio-choice">
+            <input type="radio" id="positionFilterAll" name="positionFilter" value="all"  checked/>
+            <label for="positionFilterAll">F/M/D</label>
+       </div>
+            
+        </div>
+    </div>
+
+    <div class="users-container">
+        <div class="user">
+            <div class="person-card">
+                <img src="assets/img/holland.jpg" class="img-fuid" alt="photo">
+            </div>
+            <div class="person-name">Erling Haaland</div>
+            <div class="person-age">22</div>
+            <div class="person-club">Manchester Citi</div>
+            <div class="person-position">Forward</div>
+            <div class="person-price">100$</div>
+        </div>
+       
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
